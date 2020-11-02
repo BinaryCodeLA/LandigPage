@@ -279,6 +279,69 @@
 }
 
 
+
+ /* Popup container */
+ #contac .content .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+#contac .content .popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+#contac .content .popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: green transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+ #contac .content .popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+} 
+
+#contac .content .popup .close {
+  visibility: hidden;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+} 
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+} 
+
+
+
 @keyframes textanim{
   25%{
     content: "Marketero";
@@ -366,6 +429,7 @@
   display: inline-block;
   margin: 15px 30px;
   color: #48dbfb;
+  background-color: #fff;
   font-size: 15px;
   font-weight: 500;
   width: 180px;
@@ -373,6 +437,7 @@
   padding: 14px 0;
   border-radius: 6px;
   transition: .2s linear;
+  cursor: pointer;
 }
 
 #contac .buttons a:hover,

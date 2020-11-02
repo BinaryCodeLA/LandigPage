@@ -137,14 +137,17 @@
 
       <div class="content">
         <h3 class="section-title">Contacto</h3>
+        <div class="popup" id="popup">
+          <span class="popuptext" id="myPopup">Popup text...</span>
+        </div> 
         <form>
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" class="form-input" >
+            <input type="text" name="nombre" id= "nombre" class="form-input" >
             <label for="correo">Correo</label>
-            <input type="text" name="correo" class="form-input">
+            <input type="text" name="correo" id = "correo" class="form-input">
             <label for="mensaje">Mensaje</label>
-            <textarea class="form-input" name="mensaje" cols="15" rows="3"></textarea>
-            <button type="button" class="buttons">Submit</button>
+            <textarea class="form-input" name="mensaje" id="mensaje" cols="15" rows="3"></textarea>
+            <button type="button" class="buttons" onclick="guardardatos()">Submit</button>
         </form>
       </div>
     </div>
