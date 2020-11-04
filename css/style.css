@@ -513,11 +513,12 @@
       box-shadow: 0 4px 8px 0 #00000011;
       display: inline-block;
       margin: 5px 5px;
-      padding: 5px 5px;
+      padding: 2px 2px;
       text-align: center;
       width: 100%;
-      height: auto;
+      height: 170px;
       border-radius: 8px;
+      overflow: hidden;
   }
   #service .card .titlecard {
     display: block;
@@ -529,12 +530,11 @@
   #service .card p {
    margin-top: 0.5rem;
    max-width: 100%;
+   line-height: 1rem;
   }
   #service  p {
     font-size: 12px;
-    color: #FFF;
-    margin: 2rem 0;
-  
+    color: #FFF; 
   }
 
   #service .card .fa-6x {
